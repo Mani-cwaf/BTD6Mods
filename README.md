@@ -12,6 +12,6 @@ Stat Multiplier
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/README.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/StatMultiplier.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/StatMultiplier.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
