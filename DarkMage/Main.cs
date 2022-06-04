@@ -1,4 +1,4 @@
-﻿using BTD_Mod_Helper;
+using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.ModOptions;
 using MelonLoader;
 
@@ -9,6 +9,10 @@ namespace DarkMage
 {
     public class Main : BloonsTD6Mod
     {
-        
+        public override string MelonInfoCsURL =>
+            "https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/DarkMage.cs";
+
+        public override string LatestURL =>
+            "https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/DarkMage.dll?raw=true";
     }
 }
