@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.TowerSets;
@@ -64,7 +64,7 @@ namespace DarkMage
         /// <br/>
         /// That mod will handle actually allowing the upgrades to happen in the UI
         /// </summary>
-        /*public override IEnumerable<int[]> TowerTiers()
+        public override IEnumerable<int[]> TowerTiers()
         {
             if (MelonHandler.Mods.OfType<BloonsTD6Mod>().Any(m => m.GetModName() == "UltimateCrosspathing"))
             {
@@ -86,6 +86,6 @@ namespace DarkMage
                     yield return towerTier;
                 }
             }
-        }*/
+        }
     }
 }
