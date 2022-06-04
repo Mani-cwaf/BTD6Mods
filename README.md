@@ -1,5 +1,4 @@
 # BTD6Mods
-Stat Multiplier
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
@@ -16,7 +15,6 @@ Stat Multiplier
         </td>
     </tr>
     
-Dark Mage
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
