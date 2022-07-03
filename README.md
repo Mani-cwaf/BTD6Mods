@@ -24,9 +24,9 @@
             My first tower mod, the dark mage is similar to the wizard monkey, but has more powerful and late-game worthy upgrades. thanks to mr ender for showcasing it on his channel, my youtube name is Mani Dhingra if you wanted proof
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/README.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/DarkMage.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/DarkMage.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/DarkMage/Mod%20File/DarkMage.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
