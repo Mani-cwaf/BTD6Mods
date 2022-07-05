@@ -5,7 +5,7 @@
             <h2>Stat Multiplier</h2>
         </td>
         <td>
-            An experimental mod that allows Tower pierce, damage, attack speed, range, and cash generated to be completely customizable between 0.1x and 100x.
+            [WARNING: THIS MOD CAN POSSIBLY GET YOUR ACCOUNT FLAGGED, IF YOUR ACCOUNT IS NOT ALREADY FLAGGED IT IS RECCOMENDED TO NOT USE THIS MOD] An experimental mod that allows Tower pierce, damage, attack speed, range, and cash generated to be completely customizable between 0.1x and 100x.
         </td>
         <td width="10%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/README.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
