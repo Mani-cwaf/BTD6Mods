@@ -9,8 +9,6 @@ namespace MrEnderTower
 {
     public class Main : BloonsTD6Mod
     {
-        public static readonly ModSettingBool ParagonOverPowered = true;
-
         public override string MelonInfoCsURL =>
             "https://github.com/Mani-cwaf/BTD6Mods/blob/main/MrEnderTower/Mod%20Code/Main.cs";
 
