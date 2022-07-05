@@ -30,3 +30,19 @@
             <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/DarkMage/Mod%20File/DarkMage.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
+
+<table style="table-layout:fixed">
+    <tr>
+        <td width="30%" align="center">
+            <h2>Dark Mage</h2>
+        </td>
+        <td>
+            This mod is based on the youtuber Mr Ender, it's way too OP and just a funny mod I decided to make for him.
+        </td>
+        <td width="10%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/MrEnderTower/MrEnderTower.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+        </td>
+        <td width="11%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/MrEnderTower/Mod%20File/MrEnderTower.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+        </td>
+    </tr>
