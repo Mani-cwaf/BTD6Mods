@@ -50,7 +50,7 @@
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
-            <h2>Mr Ender Tower</h2>
+            <h2>Vanilla Paragons</h2>
         </td>
         <td>
             A mod where I show my take on what the paragons should be for every vanilla tower, currently not complete whatsoever.
