@@ -2,22 +2,6 @@
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
-            <h2>Stat Multiplier</h2>
-        </td>
-        <td>
-            [WARNING: THIS MOD CAN POSSIBLY GET YOUR ACCOUNT FLAGGED, IF YOUR ACCOUNT IS NOT ALREADY FLAGGED IT IS RECCOMENDED TO NOT USE THIS MOD] An experimental mod that allows Tower pierce, damage, attack speed, range, and cash generated to be completely customizable between 0.1x and 100x.
-        </td>
-        <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/StatMultiplier.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
-        </td>
-        <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/Mod%20File/StatMultiplier.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
-        </td>
-    </tr>
-    
-<table style="table-layout:fixed">
-    <tr>
-        <td width="30%" align="center">
             <h2>Dark Mage</h2>
         </td>
         <td>
@@ -60,5 +44,21 @@
         </td>
         <td width="11%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/VanillaParagons/Mod%20File/VanillaParagons.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+        </td>
+    </tr>
+    
+<table style="table-layout:fixed">
+    <tr>
+        <td width="30%" align="center">
+            <h2>Stat Multiplier</h2>
+        </td>
+        <td>
+            [WARNING: THIS MOD CAN POSSIBLY GET YOUR ACCOUNT FLAGGED, IF YOUR ACCOUNT IS NOT ALREADY FLAGGED IT IS RECCOMENDED TO NOT USE THIS MOD] An experimental mod that allows Tower pierce, damage, attack speed, range, and cash generated to be completely customizable between 0.1x and 100x.
+        </td>
+        <td width="10%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/StatMultiplier.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+        </td>
+        <td width="11%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/StatMultiplier/Mod%20File/StatMultiplier.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
