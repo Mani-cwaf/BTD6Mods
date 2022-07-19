@@ -2,6 +2,7 @@
 using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Attack;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
+using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Unity;
@@ -56,6 +57,13 @@ namespace VanillaParagons.MagicParagons.WizardMonkeyParagon.Buffable
             SpawnUltraBloonWeapon.rate = 2;
             SpawnUltraBloon.range = 999;
             tower.GetBehavior<NecromancerZoneModel>().attackUsedForRangeModel.range = 999;
+            var fireStorm = Game.instance.model.GetTower(TowerType.WizardMonkey, 1, 2, 0).behaviors.First(a => a.name.Contains("Wall")).Cast<AttackModel>().Duplicate();
+            fireStorm.weapons[0].projectile.GetBehavior<AgeModel>().lifespan = 1.25f;
+            fireStorm.weapons[0].projectile.GetDamageModel().damage = 500;
+            fireStorm.weapons[0].Rate *= 0.1f;
+            fireStorm.weapons[0].fireWithoutTarget = false;
+            tower.AddBehavior(fireStorm);
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {
@@ -70,16 +78,20 @@ namespace VanillaParagons.MagicParagons.WizardMonkeyParagon.Buffable
             public override int Tier => 1;
             public override void ApplyUpgrade(TowerModel tower)
             {
+                var fireStorm = tower.behaviors.First(a => a.name.Contains("Wall")).Cast<AttackModel>().Duplicate();
                 var dragonsBreathWeapon = tower.GetWeapon(2);
                 var weapon = tower.GetWeapon();
                 var projectile = weapon.projectile;
                 var dragonsBreath = dragonsBreathWeapon.projectile;
+                fireStorm.weapons[0].Rate *= 0.1f;
                 weapon.rate *= 0.642857f;
                 dragonsBreathWeapon.rate *= 0.642857f;
                 projectile.GetDamageModel().damage *= 2.5f;
                 dragonsBreath.GetDamageModel().damage *= 2.5f;
+                fireStorm.weapons[0].projectile.GetDamageModel().damage *= 2.5f;
                 projectile.pierce *= 2.5f;
                 dragonsBreath.pierce *= 2.5f;
+                fireStorm.weapons[0].projectile.GetBehavior<AgeModel>().lifespan *= 1.5f;
             }
         }
     }

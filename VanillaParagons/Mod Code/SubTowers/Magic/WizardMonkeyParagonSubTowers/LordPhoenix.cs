@@ -33,11 +33,11 @@ namespace SubTowers.LordPhenix
 
         public override string DisplayName => "Yin-Yang";
         public override string Description => "";
-
         public override bool DontAddToShop => true;
 
         public override void ModifyBaseTowerModel(TowerModel tower)
         {
+            tower.ApplyDisplay<LordPhoenixDisplay>();
             var weapon = tower.GetWeapon();
             var projectile = weapon.projectile;
             var fireballweapon = tower.GetWeapon(1);
@@ -51,6 +51,24 @@ namespace SubTowers.LordPhenix
             fireballprojectilealternate.GetDamageModel().damage = 150;
             projectile.GetDamageModel().damage = 50;
             tower.RemoveBehavior<TowerExpireModel>();
+        }
+        public class LordPhoenixDisplay : ModTowerDisplay<LordPhoenix>
+        {
+            public override string BaseDisplay => GetDisplay(TowerType.WizardLordPhoenix);
+
+            public override bool UseForTower(int[] tiers)
+            {
+                return IsParagon(tiers);
+            }
+
+            public override int ParagonDisplayIndex => 0;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                foreach (var renderer in node.genericRenderers)
+                {
+                }
+            }
         }
     }
 }

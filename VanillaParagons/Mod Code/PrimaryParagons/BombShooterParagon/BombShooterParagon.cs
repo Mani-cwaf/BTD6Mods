@@ -1,11 +1,12 @@
 ﻿using Assets.Scripts.Models.Towers;
 using BTD_Mod_Helper.Api.Towers;
+using BTD_Mod_Helper.Extensions;
 
 namespace VanillaParagons.PrimaryParagons.BombShooterParagon
 {
     public class BombShooterParagonBase : ModVanillaParagon
     {
-        public override string BaseTower => "BombShooter-052";
+        public override string BaseTower => "BombShooter-025";
     }
     public class BombShooterParagon : ModParagonUpgrade<BombShooterParagonBase>
     {
@@ -14,9 +15,8 @@ namespace VanillaParagons.PrimaryParagons.BombShooterParagon
         public override string Description => "Power no one should posses.";
         //public override string Icon => "";
         //public override string Portrait => "";
-        public override void ApplyUpgrade(TowerModel towerModel)
+        public override void ApplyUpgrade(TowerModel tower)
         {
-
         }
     }
 }

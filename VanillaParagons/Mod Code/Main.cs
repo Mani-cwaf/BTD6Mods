@@ -1,7 +1,9 @@
 ﻿using Assets.Scripts.Models;
 using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.Towers.Behaviors;
+using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.Towers.Upgrades;
+using Assets.Scripts.Models.Towers.Weapons.Behaviors;
 using Assets.Scripts.Simulation.Towers.Behaviors;
 using Assets.Scripts.Utils;
 using BTD_Mod_Helper;
@@ -55,6 +57,32 @@ namespace VanillaParagons
                 var tower = __instance.tower;
                 var towerModel = tower.towerModel;
                 var degree = tower.GetTowerBehavior<ParagonTower>().GetCurrentDegree();
+                if (towerModel.baseId == "BananaFarm")
+                {
+                    if (degree % 5 == 0)
+                    {
+                        towerModel.GetBehavior<EmissionsPerRoundFilterModel>().count += degree / 5;
+                    }
+                    towerModel.GetBehavior<PerRoundCashBonusTowerModel>().cashPerRound += 950 * degree;
+                }
+                if (towerModel.baseId == "GlueGunner")
+                {
+                    if (degree >= 1)
+                    {
+                        if (degree >= 50)
+                        {
+                            towerModel.GetBehavior<SlowModel>().multiplier = 0.75f;
+                        }
+                        if (degree >= 75)
+                        {
+                            towerModel.GetBehavior<SlowModel>().multiplier = 0.7f;
+                        }
+                        if (degree >= 100)
+                        {
+                            towerModel.GetBehavior<SlowModel>().multiplier = 0.65f;
+                        }
+                    }
+                }
                 if (towerModel.baseId == "MonkeyVillage")
                 {
                     if (degree >= 1)
@@ -64,7 +92,7 @@ namespace VanillaParagons
                         towerModel.GetBehavior<DamageSupportModel>().increase += (float)degree / 10;
                         towerModel.GetBehavior<PierceSupportModel>().pierce += (float)degree / 5;
 
-                        if (degree > 75)
+                        if (degree >= 75)
                         {
                             towerModel.GetBehavior<MonkeyCityIncomeSupportModel>().incomeModifier = 1.75f;
                         }

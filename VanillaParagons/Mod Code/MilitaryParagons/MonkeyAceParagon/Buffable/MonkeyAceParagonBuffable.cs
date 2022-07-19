@@ -3,6 +3,7 @@ using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Attack;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
+using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Unity;
@@ -41,10 +42,11 @@ namespace VanillaParagons.MilitaryParagons.MonkeyAceParagon.Buffable
             weapon.rate *= 0.5f;
             tower.AddBehavior(groundzeroAbility);
             groundzeroAbility.AddBehavior(goundzeroAbilityAttackModel);
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {
-            return towerSet.First(model => model.towerId == TowerType.WizardMonkey).towerIndex + 1;
+            return towerSet.First(model => model.towerId == TowerType.MonkeyAce).towerIndex + 1;
         }
         public class MonkeyAceParagonBuffableDegree100 : ModUpgrade<MonkeyAceParagonBuffable>
         {

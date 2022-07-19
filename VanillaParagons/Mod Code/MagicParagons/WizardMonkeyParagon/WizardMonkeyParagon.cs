@@ -2,8 +2,11 @@
 using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Attack;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
+using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Unity;
+using Assets.Scripts.Unity.Display;
+using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using SubTowers.LordPhenix;
@@ -49,6 +52,33 @@ namespace VanillaParagons.MagicParagons.WizardMonkeyParagon
             SpawnUltraBloonWeapon.rate = 2;
             SpawnUltraBloon.range = 999;
             tower.GetBehavior<NecromancerZoneModel>().attackUsedForRangeModel.range = 999;
+            var fireStorm = Game.instance.model.GetTower(TowerType.WizardMonkey, 1, 2, 0).behaviors.First(a => a.name.Contains("Wall")).Cast<AttackModel>().Duplicate();
+            fireStorm.weapons[0].projectile.GetBehavior<AgeModel>().lifespan = 1.25f;
+            fireStorm.weapons[0].projectile.GetDamageModel().damage = 500;
+            fireStorm.weapons[0].Rate *= 0.1f;
+            fireStorm.weapons[0].fireWithoutTarget = false;
+            tower.AddBehavior(fireStorm);
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
+        }
+        public class GrandMageDisplay : ModTowerDisplay<WizardMonkeyParagonBase>
+        {
+            public override string BaseDisplay => GetDisplay(TowerType.WizardMonkey, 5, 0, 2);
+
+            public override bool UseForTower(int[] tiers)
+            {
+                return IsParagon(tiers);
+            }
+
+            public override int ParagonDisplayIndex => 0;
+
+            public override void ModifyDisplayNode(UnityDisplayNode node)
+            {
+                foreach (var renderer in node.genericRenderers)
+                {
+                    //renderer.material.mainTexture = GetTexture("SuperbGlue_Display");
+                    //node.SaveMeshTexture();
+                }
+            }
         }
     }
 }

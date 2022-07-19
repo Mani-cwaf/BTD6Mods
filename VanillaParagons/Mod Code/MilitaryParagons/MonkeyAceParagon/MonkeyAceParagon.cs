@@ -41,6 +41,7 @@ namespace VanillaParagons.MilitaryParagons.MonkeyAceParagon
             weapon.rate *= 0.5f;
             tower.AddBehavior(groundzeroAbility);
             groundzeroAbility.AddBehavior(goundzeroAbilityAttackModel);
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
         }
     }
 }

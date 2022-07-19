@@ -16,7 +16,7 @@ namespace VanillaParagons.PrimaryParagons.IceMonkeyParagon
         //public override string Portrait => "";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-
+            
         }
     }
 }
