@@ -6,12 +6,13 @@ using Assets.Scripts.Unity.Display;
 using BTD_Mod_Helper.Api.Display;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using VanillaParagons.SupportParagons.BananaFarmParagon.Displays;
 
 namespace VanillaParagons.SupportParagons.BananaFarmParagon
 {
     public class BananaFarmParagonBase : ModVanillaParagon
     {
-        public override string BaseTower => "BananaFarm-003";
+        public override string BaseTower => "BananaFarm-500";
     }
     public class BananaFarmParagon : ModParagonUpgrade<BananaFarmParagonBase>
     {
@@ -27,7 +28,8 @@ namespace VanillaParagons.SupportParagons.BananaFarmParagon
             weapon.GetBehavior<EmissionsPerRoundFilterModel>().count = 30;
             projectile.GetBehavior<CashModel>().minimum = 5550;
             projectile.GetBehavior<CashModel>().maximum = 5550;
-            tower.AddBehavior(new PerRoundCashBonusTowerModel("BananaFarmParagonPerRoundCashBonusTowerModel", 150000, 0, 1, "80178409df24b3b479342ed73cffb63d", false));
+            projectile.ApplyDisplay<BananaCrateDisplay>();
+            tower.AddBehavior(new PerRoundCashBonusTowerModel("BananaFarmParagonPerRoundCashBonusTowerModel", 165000, 0, 1, "80178409df24b3b479342ed73cffb63d", false));
 
         }
         public class BananaMonopolyDisplay : ModTowerDisplay<BananaFarmParagonBase>

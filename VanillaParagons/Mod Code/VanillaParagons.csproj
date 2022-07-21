@@ -93,12 +93,15 @@
     <Compile Include="PrimaryParagons\BombShooterParagon\BombShooterParagon.cs" />
     <Compile Include="PrimaryParagons\GlueGunnerParagon\Buffable\GlueGunnerParagonBuffable.cs" />
     <Compile Include="PrimaryParagons\GlueGunnerParagon\GlueGunnerParagon.cs" />
+    <Compile Include="PrimaryParagons\IceMonkeyParagon\Buffable\IceMonkeyParagonBuffable.cs" />
+    <Compile Include="PrimaryParagons\IceMonkeyParagon\Displays\IceMonkeyParagonDisplay.cs" />
     <Compile Include="PrimaryParagons\IceMonkeyParagon\IceMonkeyParagon.cs" />
     <Compile Include="PrimaryParagons\TackShooterParagon\TackShooterParagon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubTowers\Magic\WizardMonkeyParagonSubTowers\LordPhoenix.cs" />
     <Compile Include="SupportParagons\BananaFarmParagon\BananaFarmParagon.cs" />
-    <Compile Include="SupportParagons\BananaFarmParagon\Buffable\BananaFarmBuffable.cs" />
+    <Compile Include="SupportParagons\BananaFarmParagon\Buffable\BananaFarmParagonBuffable.cs" />
+    <Compile Include="SupportParagons\BananaFarmParagon\Displays\BananaFarmParagonDisplay.cs" />
     <Compile Include="SupportParagons\EngineerMonkeyParagon\EngineerMonkeyParagon.cs" />
     <Compile Include="SupportParagons\SpikeFactoryParagon\SpikeFactoryParagon.cs" />
     <Compile Include="SupportParagons\VillageParagon\Buffable\VillageParagonBuffable.cs" />
@@ -125,19 +128,22 @@
     <Folder Include="PrimaryParagons\BombShooterParagon\Buffable\" />
     <Folder Include="PrimaryParagons\BombShooterParagon\Displays\" />
     <Folder Include="PrimaryParagons\GlueGunnerParagon\Displays\" />
-    <Folder Include="PrimaryParagons\IceMonkeyParagon\Buffable\" />
-    <Folder Include="PrimaryParagons\IceMonkeyParagon\Displays\" />
     <Folder Include="PrimaryParagons\TackShooterParagon\Buffable\" />
     <Folder Include="PrimaryParagons\TackShooterParagon\Displays\" />
     <Folder Include="SubTowers\Military\" />
     <Folder Include="SubTowers\Primary\" />
     <Folder Include="SubTowers\Support\" />
-    <Folder Include="SupportParagons\BananaFarmParagon\Displays\" />
     <Folder Include="SupportParagons\EngineerMonkeyParagon\Buffable\" />
     <Folder Include="SupportParagons\EngineerMonkeyParagon\Displays\" />
     <Folder Include="SupportParagons\SpikeFactoryParagon\Buffable\" />
     <Folder Include="SupportParagons\SpikeFactoryParagon\Displays\" />
     <Folder Include="SupportParagons\VillageParagon\Displays\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SupportParagons\BananaFarmParagon\Displays\BananaFarmParagonDisplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SupportParagons\BananaFarmParagon\Displays\BananaCrateDisplay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

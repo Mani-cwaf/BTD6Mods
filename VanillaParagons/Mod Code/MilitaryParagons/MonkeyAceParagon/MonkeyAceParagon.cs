@@ -42,6 +42,7 @@ namespace VanillaParagons.MilitaryParagons.MonkeyAceParagon
             tower.AddBehavior(groundzeroAbility);
             groundzeroAbility.AddBehavior(goundzeroAbilityAttackModel);
             tower.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
+
         }
     }
 }
