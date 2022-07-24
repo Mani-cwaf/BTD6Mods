@@ -50,6 +50,22 @@
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
+            <h2>Fun Pack Of Fun Experiments</h2>
+        </td>
+        <td>
+            A collection of fun towers in a pack, with all of them toggleable (2/6 complete currently).
+        </td>
+        <td width="10%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/FunPackOfFunExperiments.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+        </td>
+        <td width="11%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/Mod%20File/FunPackOfFunExperiments.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+        </td>
+    </tr>
+
+<table style="table-layout:fixed">
+    <tr>
+        <td width="30%" align="center">
             <h2>Stat Multiplier</h2>
         </td>
         <td>
