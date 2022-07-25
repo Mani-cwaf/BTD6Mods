@@ -85,7 +85,6 @@
   <ItemGroup>
     <Folder Include="AssassinMonkey\Upgrades\" />
     <Folder Include="BombTurretBuilder\Upgrades\" />
-    <Folder Include="FireSniper\Upgrades\" />
     <Folder Include="MonkeySeeker\Upgrades\" />
     <Folder Include="OPFreeDartMonkey\Upgrades\" />
     <Folder Include="OPFreeGlueGunner\Upgrades\" />

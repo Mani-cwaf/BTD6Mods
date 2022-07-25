@@ -4,10 +4,12 @@ using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Unity;
+using Assets.Scripts.Utils;
 using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using MelonLoader;
+using static FunPackOfFunExperiments.Main;
 
 namespace BombTurretBuilder
 {
@@ -20,6 +22,9 @@ namespace BombTurretBuilder
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
         public override string Description => "Creates turrets that place exploding bombs";
+        public override SpriteReference IconReference => new SpriteReference("MonkeyIcons[GlueGunnerIcon]");
+        public override SpriteReference PortraitReference => new SpriteReference("4cf5ed7ac85b3ad4cb921bf7b7a24e16");
+        public override bool DontAddToShop => !BombTurretBuilderEnabled == true;
         public override ParagonMode ParagonMode => ParagonMode.Base000;
         public override void ModifyBaseTowerModel(TowerModel tower)
         {
