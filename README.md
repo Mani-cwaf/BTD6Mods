@@ -1,4 +1,4 @@
-# BTD6Mods (I see you "reaper (heli gang)")
+# BTD6Mods (this is here cuz "reaper (heli gang)" and "Vengefulblon" don't believe me)
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
