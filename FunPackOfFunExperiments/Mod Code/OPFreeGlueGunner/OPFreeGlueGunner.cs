@@ -43,8 +43,6 @@ namespace OPFreeGlueGunner
             var DOT = projectile.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>();
             DOT.damage = 2000000000;
             DOT.interval = 0.01f;
-            projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
-            projectile.GetDamageModel().distributeToChildren = true;
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)

@@ -35,8 +35,7 @@ namespace OPFreeDartMonkey
             tower.range += 1000;
             projectile.GetDamageModel().damage = 2140000000;
             projectile.GetBehavior<TravelStraitModel>().lifespan = 5;
-            weapon.emission = new ArcEmissionModel("OPFreeDartMonkeyArcEmissionModel", 90, 0, 0, null, false);
-            weapon.rate = 0.5f;
+            weapon.emission = new ArcEmissionModel("OPFreeDartMonkeyArcEmissionModel", 200, 0, 0, null, false);
             projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
             projectile.GetDamageModel().distributeToChildren = true;
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
