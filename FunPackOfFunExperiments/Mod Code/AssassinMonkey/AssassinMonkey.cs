@@ -1,13 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors;
-using Assets.Scripts.Models.TowerSets;
+﻿using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Utils;
-using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using MelonLoader;
 using static FunPackOfFunExperiments.Main;
 
 namespace AssassinMonkey

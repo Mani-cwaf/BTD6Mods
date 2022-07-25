@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors;
+﻿using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
+using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Utils;
-using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using MelonLoader;
+using System.Collections.Generic;
+using System.Linq;
 using static FunPackOfFunExperiments.Main;
 
 namespace OPFreeDartMonkey
@@ -39,6 +37,9 @@ namespace OPFreeDartMonkey
             projectile.GetBehavior<TravelStraitModel>().lifespan = 5;
             weapon.emission = new ArcEmissionModel("OPFreeDartMonkeyArcEmissionModel", 90, 0, 0, null, false);
             weapon.rate = 0.5f;
+            projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
+            projectile.GetDamageModel().distributeToChildren = true;
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {

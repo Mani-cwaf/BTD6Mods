@@ -1,16 +1,14 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Assets.Scripts.Models.Bloons.Behaviors;
+﻿using Assets.Scripts.Models.Bloons.Behaviors;
 using Assets.Scripts.Models.Towers;
-using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors;
+using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Utils;
-using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
-using MelonLoader;
+using System.Collections.Generic;
+using System.Linq;
 using static FunPackOfFunExperiments.Main;
 
 namespace OPFreeGlueGunner
@@ -45,6 +43,9 @@ namespace OPFreeGlueGunner
             var DOT = projectile.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>();
             DOT.damage = 2000000000;
             DOT.interval = 0.01f;
+            projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
+            projectile.GetDamageModel().distributeToChildren = true;
+            tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {

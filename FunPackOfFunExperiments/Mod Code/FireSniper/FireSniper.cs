@@ -24,7 +24,7 @@ namespace FireSniper
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 1;
         public override string Description => "Shoots incendiary rounds at bloons.";
-        public override SpriteReference IconReference => new SpriteReference("MonkeyIcons[GlueGunnerIcon]");
+        public override SpriteReference IconReference => new SpriteReference("MonkeyIcons[SniperMonkeyIcon]");
         public override SpriteReference PortraitReference => new SpriteReference("4cf5ed7ac85b3ad4cb921bf7b7a24e16");
         public override bool DontAddToShop => !FireSniperEnabled == true;
         public override ParagonMode ParagonMode => ParagonMode.Base000;
@@ -76,7 +76,7 @@ namespace FireSniper
             explosion.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().displayLifetime = 1.5f;
             explosion.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().interval = 0.5f;
             explosion.GetDamageModel().immuneBloonProperties = BloonProperties.None;
-            projectile.collisionPasses = new int[] { -1, 0, 1};
+            projectile.collisionPasses = new int[] { -1, 0, 1 };
         }
     }
     public class StunningExplosiveBullets : ModUpgrade<FireSniper>
