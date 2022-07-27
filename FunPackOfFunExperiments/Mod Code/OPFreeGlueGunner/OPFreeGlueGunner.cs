@@ -22,9 +22,9 @@ namespace OPFreeGlueGunner
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 0;
         public override string Description => "Totally just a free glue gunner";
-        public override string DisplayName => "\"Free\" Glue Gunner";
-        public override SpriteReference IconReference => new SpriteReference("MonkeyIcons[GlueGunnerIcon]");
-        public override SpriteReference PortraitReference => new SpriteReference("4cf5ed7ac85b3ad4cb921bf7b7a24e16");
+        public override string DisplayName => "\"Free Glue Gunner\"";
+        public override string Icon => "OPFreeGlueGunner-Icon";
+        public override string Portrait => "OPFreeGlueGunner-Portrait";
         public override bool DontAddToShop => !OPFreeGlueGunnerEnabled == true;
         public override ParagonMode ParagonMode => ParagonMode.Base000;
         public override void ModifyBaseTowerModel(TowerModel tower)
@@ -40,6 +40,7 @@ namespace OPFreeGlueGunner
             projectile.RemoveBehaviors<SlowModel>();
             projectile.AddBehavior(new SlowModel("OPFreeGlueGunnerSlowModel", 0.25f, 11, "", 999999, "GlueBasic", true, false, null, true, false, false, 100));
             projectile.GetBehavior<TravelStraitModel>().lifespan = 5;
+            projectile.pierce = 100;
             var DOT = projectile.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>();
             DOT.damage = 2000000000;
             DOT.interval = 0.01f;

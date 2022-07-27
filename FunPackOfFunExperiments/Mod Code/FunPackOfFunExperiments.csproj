@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FunPackOfFunExperiments</RootNamespace>
     <AssemblyName>FunPackOfFunExperiments</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +35,10 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -67,6 +72,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloonChipper\BloonChipper.cs" />
+    <Compile Include="BloonChipper\Displays\BloonChipperDisplay.cs" />
     <Compile Include="AssassinMonkey\Displays\AssassinMonkeyDisplay.cs" />
     <Compile Include="AssassinMonkey\AssassinMonkey.cs" />
     <Compile Include="BombTurretBuilder\BombTurretBuilder.cs" />
@@ -81,20 +88,38 @@
     <Compile Include="MonkeySeeker\MonkeySeeker.cs" />
     <Compile Include="MonkeySeeker\Displays\MonkeySeekerDisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuincyGrandfatherOfQuincy\QuincyGrandfatherOfQuincy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AssassinMonkey\Upgrades\" />
+    <Folder Include="BloonChipper\Upgrades\" />
     <Folder Include="BombTurretBuilder\Upgrades\" />
     <Folder Include="MonkeySeeker\Upgrades\" />
     <Folder Include="OPFreeDartMonkey\Upgrades\" />
     <Folder Include="OPFreeGlueGunner\Upgrades\" />
+    <Folder Include="QuincyGrandfatherOfQuincy\Upgrades\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="OPFreeDartMonkey\Displays\OPFreeDartMonkeyDisplay.png" />
     <EmbeddedResource Include="OPFreeGlueGunner\Displays\OPFreeGlueGunnerDisplay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FireSniper\Displays\FireSniper-Portrait.png" />
+    <EmbeddedResource Include="FireSniper\Displays\FireSniperDisplay.png" />
+    <EmbeddedResource Include="OPFreeGlueGunner\Displays\OPFreeGlueGunner-Portrait.png" />
+    <EmbeddedResource Include="OPFreeDartMonkey\Displays\OPFreeDartMonkey-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FireSniper\Displays\FireSniper-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OPFreeDartMonkey\Displays\OPFreeDartMonkey-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OPFreeGlueGunner\Displays\OPFreeGlueGunner-Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods" /y</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "D:\Stuffs\Steam\steamapps\common\BloonsTD6\Mods" /y</PostBuildEvent>
   </PropertyGroup>
 </Project>

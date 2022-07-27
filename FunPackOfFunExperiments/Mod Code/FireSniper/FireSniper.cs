@@ -24,8 +24,6 @@ namespace FireSniper
         public override int MiddlePathUpgrades => 0;
         public override int BottomPathUpgrades => 1;
         public override string Description => "Shoots incendiary rounds at bloons.";
-        public override SpriteReference IconReference => new SpriteReference("MonkeyIcons[SniperMonkeyIcon]");
-        public override SpriteReference PortraitReference => new SpriteReference("4cf5ed7ac85b3ad4cb921bf7b7a24e16");
         public override bool DontAddToShop => !FireSniperEnabled == true;
         public override ParagonMode ParagonMode => ParagonMode.Base000;
         public override void ModifyBaseTowerModel(TowerModel tower)
@@ -117,7 +115,7 @@ namespace FireSniper
     public class AHundredDegrees : ModUpgrade<FireSniper>
     {
         public override string DisplayName => "A Hundred Degrees";
-        public override string Description => "Fire and bullets deal more moab damage and fire faster";
+        public override string Description => "Fire and bullets deal more moab damage";
         public override int Cost => 18575;
         public override int Path => TOP;
         public override int Tier => 4;
@@ -128,8 +126,7 @@ namespace FireSniper
             var projectile = weapon.projectile;
             var explosion = attackModel.GetDescendants<ProjectileModel>().ToIl2CppList()[1];
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
-            attackModel.GetDescendants<ProjectileModel>().ForEach(projectileModel => projectileModel.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().damageModifierModels = new[] { new DamageModifierForTagModel("DamageModifierForBloonTagModel", "Moabs", 1, 18, true, true) });
-            weapon.rate *= 0.75f;
+            attackModel.GetDescendants<ProjectileModel>().ForEach(projectileModel => projectileModel.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().damageModifierModels = new[] { new DamageModifierForTagModel("DamageModifierForBloonTagModel", "Moabs", 1, 26, true, true) });
             explosion.pierce += 20;
             explosion.GetBehavior<SlowModel>().lifespan *= 1.35f;
         }
@@ -137,7 +134,7 @@ namespace FireSniper
     public class AThousandDegrees : ModUpgrade<FireSniper>
     {
         public override string DisplayName => "A Thousand Degrees";
-        public override string Description => "Fire, explosions, and bullets deal more moab, ceramic, and fortified damage. Also fires faster";
+        public override string Description => "Fire, explosions, and bullets deal more moab, ceramic, and fortified damage.";
         public override int Cost => 65750;
         public override int Path => TOP;
         public override int Tier => 5;
@@ -151,16 +148,17 @@ namespace FireSniper
             attackModel.GetDescendants<ProjectileModel>().ForEach(projectileModel => projectileModel.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().damageModifierModels = new[] { new DamageModifierForTagModel("DamageModifierForBloonTagModel", "Fortified", 1, 25, true, true) });
             attackModel.GetDescendants<ProjectileModel>().ForEach(projectileModel => projectileModel.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().damageModifierModels = new[] { new DamageModifierForTagModel("DamageModifierForBloonTagModel", "Ceramic", 1, 38, true, true) });
             attackModel.GetDescendants<ProjectileModel>().ForEach(projectileModel => projectileModel.GetBehavior<AddBehaviorToBloonModel>().GetBehavior<DamageOverTimeModel>().damageModifierModels = new[] { new DamageModifierForTagModel("DamageModifierForBloonTagModel", "Moabs", 1, 48, true, true) });
-            projectile.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Fortified", 1, 25, false, true));
+            projectile.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Fortified", 1, 35, false, true));
             projectile.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Ceramic", 1, 20, false, true));
-            projectile.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Moabs", 1, 30, false, true));
-            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Fortified", 1, 12.5f, false, true));
-            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Ceramic", 1, 10, false, true));
-            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Moabs", 1, 15, false, true));
+            projectile.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Moabs", 1, 50, false, true));
+            explosion.GetDamageModel().damage += 30;
+            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Fortified", 1, 20f, false, true));
+            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Ceramic", 1, 20, false, true));
+            explosion.AddBehavior(new DamageModifierForTagModel("BaseProjectileDamageModifierForTagModel", "Moabs", 1, 30, false, true));
+            explosion.GetDamageModel().damage += 20;
             explosion.pierce += 40;
             explosion.radius += 5;
             explosion.GetBehavior<CreateEffectOnContactModel>().effectModel.scale = 1;
-            weapon.rate *= 0.6f;
             explosion.GetBehavior<SlowModel>().lifespan *= 4;
         }
     }
