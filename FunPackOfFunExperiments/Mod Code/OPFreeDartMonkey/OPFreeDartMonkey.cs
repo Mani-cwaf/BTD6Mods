@@ -2,7 +2,6 @@
 using Assets.Scripts.Models.Towers.Behaviors.Attack;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
 using Assets.Scripts.Models.Towers.Filters;
-using Assets.Scripts.Models.Towers.Projectiles;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Unity;
@@ -39,7 +38,7 @@ namespace OPFreeDartMonkey
             attackModel.range += 1000;
             tower.range += 1000;
             projectile.pierce = 10;
-            projectile.GetDamageModel().damage = 214;
+            projectile.GetDamageModel().damage = 2140000000;
             projectile.GetBehavior<TravelStraitModel>().lifespan = 5;
             weapon.emission = new ArcEmissionModel("OPFreeDartMonkeyArcEmissionModel", 230, 0, 0, null, false);
             projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
@@ -47,7 +46,7 @@ namespace OPFreeDartMonkey
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
-        {   
+        {
             return towerSet.First(model => model.towerId == TowerType.DartMonkey).towerIndex + 1;
         }
     }
@@ -55,210 +54,165 @@ namespace OPFreeDartMonkey
     {
         public override string DisplayName => "MONKE";
         public override string Description => "MONKE";
-        public override int Cost => 1;
+        public override int Cost => 0;
         public override int Path => TOP;
         public override int Tier => 1;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEtop : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE";
         public override string Description => "MONKE MONKE";
-        public override int Cost => 2;
+        public override int Cost => 0;
         public override int Path => TOP;
         public override int Tier => 2;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEtop : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE";
-        public override int Cost => 3;
+        public override int Cost => 0;
         public override int Path => TOP;
         public override int Tier => 3;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEtop : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE";
-        public override int Cost => 4;
+        public override int Cost => 0;
         public override int Path => TOP;
         public override int Tier => 4;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEtop : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE MONKE";
-        public override int Cost => 5;
+        public override int Cost => 0;
         public override int Path => TOP;
         public override int Tier => 5;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEbottom : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE";
         public override string Description => "MONKE";
-        public override int Cost => 1;
+        public override int Cost => 0;
         public override int Path => BOTTOM;
         public override int Tier => 1;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEbottom : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE";
         public override string Description => "MONKE MONKE";
-        public override int Cost => 2;
+        public override int Cost => 0;
         public override int Path => BOTTOM;
         public override int Tier => 2;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEbottom : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE";
-        public override int Cost => 3;
+        public override int Cost => 0;
         public override int Path => BOTTOM;
         public override int Tier => 3;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEbottom : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE";
-        public override int Cost => 4;
+        public override int Cost => 0;
         public override int Path => BOTTOM;
         public override int Tier => 4;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEbottom : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE MONKE";
-        public override int Cost => 5;
+        public override int Cost => 0;
         public override int Path => BOTTOM;
         public override int Tier => 5;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEmid : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE";
         public override string Description => "MONKE";
-        public override int Cost => 1;
+        public override int Cost => 0;
         public override int Path => MIDDLE;
         public override int Tier => 1;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEmid : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE";
         public override string Description => "MONKE MONKE";
-        public override int Cost => 1;
+        public override int Cost => 0;
         public override int Path => MIDDLE;
         public override int Tier => 2;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEmid : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE";
-        public override int Cost => 1;
+        public override int Cost => 0;
         public override int Path => MIDDLE;
         public override int Tier => 3;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEmid : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE";
-        public override int Cost => 4;
+        public override int Cost => 0;
         public override int Path => MIDDLE;
         public override int Tier => 4;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEmid : ModUpgrade<OPFreeDartMonkey>
     {
         public override string DisplayName => "MONKE MONKE MONKE MONKE MONKE";
         public override string Description => "MONKE MONKE MONKE MONKE MONKE";
-        public override int Cost => 5;
+        public override int Cost => 0;
         public override int Path => MIDDLE;
         public override int Tier => 5;
         public override void ApplyUpgrade(TowerModel tower)
         {
-            var weapon = tower.GetWeapon();
-            var projectile = weapon.projectile;
-            projectile.GetDamageModel().damage *= 10;
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKE : ModParagonUpgrade<OPFreeDartMonkey>
