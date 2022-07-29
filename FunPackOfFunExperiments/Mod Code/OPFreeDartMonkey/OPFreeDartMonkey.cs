@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Models.Towers;
+using Assets.Scripts.Models.Towers.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Attack;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
 using Assets.Scripts.Models.Towers.Filters;
@@ -41,6 +42,7 @@ namespace OPFreeDartMonkey
             projectile.GetDamageModel().damage = 2140000000;
             projectile.GetBehavior<TravelStraitModel>().lifespan = 5;
             weapon.emission = new ArcEmissionModel("OPFreeDartMonkeyArcEmissionModel", 230, 0, 0, null, false);
+            weapon.rate *= 0.85f;
             projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
             projectile.GetDamageModel().distributeToChildren = true;
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
@@ -231,13 +233,15 @@ namespace OPFreeDartMonkey
             fireStorm.weapons[0].projectile.GetDamageModel().damage = 2000000000;
             fireStorm.weapons[0].projectile.radius += 15;
             fireStorm.weapons[0].projectile.display = "";
-            fireStorm.weapons[0].Rate *= .0025f;
+            fireStorm.weapons[0].Rate *= .0016f;
             tower.AddBehavior(fireStorm);
+            tower.AddBehavior(new SlowBloonsZoneModel("MONKESlowBloonsZoneModel", 0, "", true, null, 0.925f, 0, true, 0, "", true, null));
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEDisplay : ModTowerDisplay<OPFreeDartMonkey>
     {
         public override string BaseDisplay => GetDisplay(TowerType.DartMonkey);
+        public override float Scale => 1.15f;
 
         public override bool UseForTower(int[] tiers)
         {
