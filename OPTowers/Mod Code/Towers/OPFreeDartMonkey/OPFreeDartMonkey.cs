@@ -13,7 +13,7 @@ using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Collections.Generic;
 using System.Linq;
-using static FunPackOfFunExperiments.Main;
+using static OPTowers.Main;
 
 namespace OPFreeDartMonkey
 {
@@ -236,6 +236,20 @@ namespace OPFreeDartMonkey
             fireStorm.weapons[0].Rate *= .0016f;
             tower.AddBehavior(fireStorm);
             tower.AddBehavior(new SlowBloonsZoneModel("MONKESlowBloonsZoneModel", 0, "", true, null, 0.925f, 0, true, 0, "", true, null));
+        }
+    }
+    public class OPFreeDartMonkeyDisplay : ModTowerDisplay<OPFreeDartMonkey>
+    {
+        public override string BaseDisplay => GetDisplay("DartMonkey");
+
+        public override bool UseForTower(int[] tiers)
+        {
+            return tiers.Sum() == 0;
+        }
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            SetMeshTexture(node, Name);
         }
     }
     public class MONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEMONKEDisplay : ModTowerDisplay<OPFreeDartMonkey>

@@ -9,7 +9,7 @@ using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Collections.Generic;
 using System.Linq;
-using static FunPackOfFunExperiments.Main;
+using static OPTowers.Main;
 
 namespace OPFreeGlueGunner
 {

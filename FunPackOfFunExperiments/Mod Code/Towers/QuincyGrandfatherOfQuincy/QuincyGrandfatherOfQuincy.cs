@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.Towers.Behaviors;
+using Assets.Scripts.Models.Towers.Behaviors.Abilities;
 using Assets.Scripts.Models.Towers.Behaviors.Abilities.Behaviors;
 using Assets.Scripts.Models.Towers.Behaviors.Emissions;
 using Assets.Scripts.Models.Towers.Filters;
@@ -38,7 +39,7 @@ namespace QuincyGrandfatherOfQuincy
             weapon.emission = new RandomArcEmissionModel("QuincyGrandfatherOfQuincyArcEmissionModel", 10, 0, 5, 5, 0, null);
             projectile.GetDamageModel().immuneBloonProperties = BloonProperties.None;
             tower.GetDescendants<FilterInvisibleModel>().ForEach(invisibleModel => invisibleModel.isActive = false);
-            tower.GetAbility().GetBehavior<TurboModel>().multiplier = 0.1f;
+            tower.RemoveBehaviors<AbilityModel>();
         }
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {
