@@ -4,7 +4,10 @@ using Assets.Scripts.Models.Towers.Behaviors.Attack.Behaviors;
 using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Models.TowerSets;
+using Assets.Scripts.Unity.Display;
 using Assets.Scripts.Utils;
+using BTD_Mod_Helper.Api.Display;
+using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Collections.Generic;
@@ -15,7 +18,7 @@ namespace OPFreeGlueGunner
 {
     public class OPFreeGlueGunner : ModTower
     {
-        public override string TowerSet => PRIMARY;
+        public override string TowerSet => TowerSetType.Primary;
         public override string BaseTower => "GlueGunner-200";
         public override int Cost => 0;
         public override int TopPathUpgrades => 0;
@@ -49,6 +52,20 @@ namespace OPFreeGlueGunner
         public override int GetTowerIndex(List<TowerDetailsModel> towerSet)
         {
             return towerSet.First(model => model.towerId == TowerType.GlueGunner).towerIndex + 1;
+        }
+    }
+    public class OPFreeGlueGunnerDisplay : ModTowerDisplay<OPFreeGlueGunner>
+    {
+        public override string BaseDisplay => GetDisplay("GlueGunner");
+
+        public override bool UseForTower(int[] tiers)
+        {
+            return tiers.Sum() == 0;
+        }
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            SetMeshTexture(node, Name);
         }
     }
 }

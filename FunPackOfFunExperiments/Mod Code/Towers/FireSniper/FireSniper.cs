@@ -7,6 +7,7 @@ using Assets.Scripts.Models.Towers.Projectiles;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Utils;
+using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace FireSniper
 {
     public class FireSniper : ModTower
     {
-        public override string TowerSet => MILITARY;
+        public override string TowerSet => TowerSetType.Military;
         public override string BaseTower => "SniperMonkey";
         public override int Cost => 965;
         public override int TopPathUpgrades => 5;

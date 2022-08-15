@@ -9,6 +9,7 @@ using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.Display;
 using Assets.Scripts.Utils;
 using BTD_Mod_Helper.Api.Display;
+using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace OPFreeDartMonkey
 {
     public class OPFreeDartMonkey : ModTower
     {
-        public override string TowerSet => PRIMARY;
+        public override string TowerSet => TowerSetType.Primary;
         public override string BaseTower => TowerType.DartMonkey;
         public override int Cost => 0;
         public override int TopPathUpgrades => 5;

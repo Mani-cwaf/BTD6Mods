@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Models.Towers;
 using Assets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Assets.Scripts.Unity;
+using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace MonkeySeeker
 {
     public class MonkeySeeker : ModTower
     {
-        public override string TowerSet => MAGIC;
+        public override string TowerSet => TowerSetType.Magic;
         public override string BaseTower => TowerType.DartMonkey;
         public override int Cost => 1265;
         public override int TopPathUpgrades => 1;

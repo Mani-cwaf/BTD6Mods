@@ -7,8 +7,8 @@
     <ProjectGuid>{561A9956-B233-4A83-87E5-D886071BC206}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FunPackOfFunExperiments</RootNamespace>
-    <AssemblyName>FunPackOfFunExperiments</AssemblyName>
+    <RootNamespace>BloonChipper</RootNamespace>
+    <AssemblyName>BloonChipper</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -71,30 +71,73 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Towers\AssassinMonkey\Displays\AssassinMonkeyDisplay.cs" />
-    <Compile Include="Towers\AssassinMonkey\AssassinMonkey.cs" />
-    <Compile Include="Towers\BombTurretBuilder\BombTurretBuilder.cs" />
-    <Compile Include="Towers\BombTurretBuilder\Displays\BombTurretBuilderDisplay.cs" />
-    <Compile Include="Towers\FireSniper\FireSniper.cs" />
-    <Compile Include="Towers\FireSniper\Displays\FireSniperDisplay.cs" />
+    <Compile Include="BloonChipper.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Towers\MonkeySeeker\MonkeySeeker.cs" />
-    <Compile Include="Towers\MonkeySeeker\Displays\MonkeySeekerDisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Towers\QuincyGrandfatherOfQuincy\QuincyGrandfatherOfQuincy.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Towers\AssassinMonkey\Upgrades\" />
-    <Folder Include="Towers\BombTurretBuilder\Upgrades\" />
-    <Folder Include="Towers\MonkeySeeker\Upgrades\" />
-    <Folder Include="Towers\QuincyGrandfatherOfQuincy\Upgrades\" />
+    <Folder Include="Displays\Icon\Bottom Path\" />
+    <Folder Include="Displays\Portrait\Bottom Path\" />
+    <Folder Include="Displays\TowerModels\Bottom Path\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Towers\FireSniper\Displays\FireSniper-Portrait.png" />
-    <EmbeddedResource Include="Towers\FireSniper\Displays\FireSniperDisplay.png" />
+    <EmbeddedResource Include="Displays\Portrait\Middle Path\FasterShred-Portrait.png" />
+    <EmbeddedResource Include="Displays\Portrait\Top Path\DualLayerBlade-Portrait.png" />
+    <EmbeddedResource Include="Displays\Portrait\Top Path\HeavyDutySuction-Portrait.png" />
+    <EmbeddedResource Include="Displays\Portrait\Top Path\Suckier-Portrait.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Middle Path\FasterShredDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Middle Path\LongRangeSuckDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Middle Path\SupaVacDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Middle Path\TripleBarrelDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Top Path\DualLayerBladesDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Top Path\HeavyDutySuckageDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Top Path\SuckierDisplay.png" />
+    <EmbeddedResource Include="Displays\TowerModels\Top Path\SuperWideFunnelDisplay.png" />
+    <EmbeddedResource Include="Displays\Portrait\Middle Path\LongRangeSuck-Portrait.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Towers\FireSniper\Displays\FireSniper-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Middle Path\FasterShred-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Middle Path\LongRangeSuck-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Middle Path\SupaVac-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Middle Path\TripleBarrel-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Top Path\DualLayerBlades-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Top Path\HeavyDutySuction-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Top Path\Suckier-Icon.png" />
+    <EmbeddedResource Include="Displays\Icon\Top Path\SuperWideFunnel-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\TowerModels\Top Path\UltraWideFunnelDisplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Portrait\Top Path\SuperWideFunnel-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Portrait\Middle Path\SupaVac-Portrait.png" />
+    <EmbeddedResource Include="Displays\Portrait\Middle Path\TripleBarrel-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\TowerModels\Middle Path\VacuumDisplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Portrait\Top Path\UltraWideFunnel-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Portrait\Middle Path\Vacuum-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Icon\Top Path\UltraWideFunnel-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Icon\Middle Path\Vacuum-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\TowerModels\BloonChipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Icon\BloonChipper-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\Portrait\Bloonchipper-Portrait.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

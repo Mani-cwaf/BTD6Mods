@@ -6,6 +6,7 @@ using Assets.Scripts.Models.Towers.Behaviors.Emissions;
 using Assets.Scripts.Models.Towers.Filters;
 using Assets.Scripts.Models.TowerSets;
 using Assets.Scripts.Utils;
+using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace QuincyGrandfatherOfQuincy
     public class QuincyGrandfatherOfQuincy : ModTower
     {
 
-        public override string TowerSet => PRIMARY;
+        public override string TowerSet => TowerSetType.Primary;
         public override string BaseTower => "Quincy 20";
         public override int Cost => 855;
         public override int TopPathUpgrades => 0;
