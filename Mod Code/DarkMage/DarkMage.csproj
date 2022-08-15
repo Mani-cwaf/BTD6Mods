@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{561A9956-B233-4A83-87E5-D886071BC206}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DarkMage</RootNamespace>
+    <AssemblyName>DarkMage</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BloonsTD6 Mod Helper">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods\BloonsTD6 Mod Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>C:.\Program Files (x86)\Steam\steamapps\common\BloonsTD6\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DarkMage.cs" />
+    <Compile Include="Displays\DarkMageBaseDisplay.cs" />
+    <Compile Include="Displays\DarkMageMultiDisplay.cs" />
+    <Compile Include="Displays\DarkMageParagonDisplay.cs" />
+    <Compile Include="Displays\Tier1\ExtendedDarknessDisplay.cs" />
+    <Compile Include="Displays\Tier1\FastBoltsDisplay.cs" />
+    <Compile Include="Displays\Tier1\PowerfulMagicDisplay.cs" />
+    <Compile Include="Displays\Tier2\AdvancedSightDisplay.cs" />
+    <Compile Include="Displays\Tier2\FasterBoltsDisplay.cs" />
+    <Compile Include="Displays\Tier2\ExtraPowerfulMagicDisplay.cs" />
+    <Compile Include="Displays\Tier3\DarkDoubleDisplay.cs" />
+    <Compile Include="Displays\Tier3\DarkPulseDisplay.cs" />
+    <Compile Include="Displays\Tier3\VoidsArmDisplay.cs" />
+    <Compile Include="Displays\Tier4\DarkTripleDisplay.cs" />
+    <Compile Include="Displays\Tier4\ControlledChaosDisplay.cs" />
+    <Compile Include="Displays\Tier4\DarkerThanTheDarkestBloonDisplay.cs" />
+    <Compile Include="Displays\Tier5\ForbiddenMagicDisplay.cs" />
+    <Compile Include="Displays\Tier5\UltimatePowerDisplay.cs" />
+    <Compile Include="Displays\Tier5\UltimateChaosDisplay.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Upgrades\BottomPath\ExtendedDarkness.cs" />
+    <Compile Include="Upgrades\BottomPath\AdvancedSight.cs" />
+    <Compile Include="Upgrades\BottomPath\DarkDouble.cs" />
+    <Compile Include="Upgrades\BottomPath\DarkTriple.cs" />
+    <Compile Include="Upgrades\BottomPath\ForbiddenMagic.cs" />
+    <Compile Include="Upgrades\TopPath\PowerfulMagic.cs" />
+    <Compile Include="Upgrades\TopPath\ExtraPowerfulMagic.cs" />
+    <Compile Include="Upgrades\MiddlePath\DarkPulse.cs" />
+    <Compile Include="Upgrades\MiddlePath\ControlledChaos.cs" />
+    <Compile Include="Upgrades\MiddlePath\UltimateChaos.cs" />
+    <Compile Include="Upgrades\MiddlePath\FastBolts.cs" />
+    <Compile Include="Upgrades\MiddlePath\FasterBolts.cs" />
+    <Compile Include="Upgrades\TopPath\VoidsArm.cs" />
+    <Compile Include="Upgrades\TopPath\DarkerThanTheDarkestBloon.cs" />
+    <Compile Include="Upgrades\TopPath\UltimatePower.cs" />
+    <Compile Include="Upgrades\AvatarOfDarkness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\DarkMageBaseDisplay.png" />
+    <EmbeddedResource Include="Displays\DarkMageParagonDisplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Upgrades\TopPath\ExtraPowerfulMagic-Icon.png" />
+    <EmbeddedResource Include="Upgrades\AvatarOfDarkness-Icon.png" />
+    <EmbeddedResource Include="Upgrades\AvatarOfDarkness-Portrait.png" />
+    <EmbeddedResource Include="Upgrades\BottomPath\AdvancedSight-Icon.png" />
+    <EmbeddedResource Include="Upgrades\BottomPath\DarkDouble-Icon.png" />
+    <EmbeddedResource Include="Upgrades\BottomPath\DarkTriple-Icon.png" />
+    <EmbeddedResource Include="Upgrades\BottomPath\ExtendedDarkness-Icon.png" />
+    <EmbeddedResource Include="Upgrades\BottomPath\ForbiddenMagic-Icon.png" />
+    <EmbeddedResource Include="Upgrades\MiddlePath\ControlledChaos-Icon.png" />
+    <EmbeddedResource Include="Upgrades\MiddlePath\DarkPulse-Icon.png" />
+    <EmbeddedResource Include="Upgrades\MiddlePath\FastBolts-Icon.png" />
+    <EmbeddedResource Include="Upgrades\MiddlePath\FasterBolts-Icon.png" />
+    <EmbeddedResource Include="Upgrades\MiddlePath\UltimateChaos-Icon.png" />
+    <EmbeddedResource Include="Upgrades\TopPath\DarkerThanTheDarkestBloon-Icon.png" />
+    <EmbeddedResource Include="Upgrades\TopPath\PowerfulMagic-Icon.png" />
+    <EmbeddedResource Include="Upgrades\TopPath\UltimatePower-Icon.png" />
+    <EmbeddedResource Include="Upgrades\TopPath\VoidsArm-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Displays\Projectiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "C:\Program Files (x86)\Steam\steamapps\common\BloonsTD6\Mods" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

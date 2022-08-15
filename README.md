@@ -8,10 +8,10 @@
             My first tower mod, the dark mage is similar to the wizard monkey, but has more powerful and late-game worthy upgrades. thanks to mr ender for showcasing it on his channel.
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/DarkMage/DarkMage.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/DarkMage/DarkMage.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/DarkMage/Mod%20File/DarkMage.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/Mods/DarkMage/DarkMage.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
 
@@ -24,10 +24,10 @@
             This mod is based on the youtuber Mr Ender, it's way too OP and just a funny mod I decided to make for him.
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/MrEnderTower/MrEnderTower.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/MrEnderTower/MrEnderTower.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/MrEnderTower/Mod%20File/MrEnderTower.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/Mods/MrEnderTower/MrEnderTower.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
     
@@ -40,10 +40,10 @@
             A mod where I show my take on what the paragons should be for every vanilla tower, currently not complete whatsoever but I'm working on it ok don't judge me.
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/VanillaParagons/VanillaParagons.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/VanillaParagons/VanillaParagons.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/VanillaParagons/Mod%20File/VanillaParagons.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/raw/main/Mods/VanillaParagons/VanillaParagons.dll"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
     
@@ -56,10 +56,10 @@
             A collection of fun towers in a pack, with all of them toggleable (work in progress too, don't judge me I bit off more than I can chew).
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/FunPackOfFunExperiments.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/FunPackOfFunExperiments/FunPackOfFunExperiments.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/Mod%20File/FunPackOfFunExperiments.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mods/FunPackOfFunExperiments/FunPackOfFunExperiments.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
 
@@ -72,10 +72,10 @@
             Basically just memes, have you ever wanted a dart monkey that could do trillions of damage? Well I got the tower for you.
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/OPTowers/OPTowers.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/OPTowers/OPTowers.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/OPTowers/Mod%20File/OPTowers.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mods/OPTowers/OPTowers.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
 
@@ -88,10 +88,10 @@
             One of the hardest towers to code I've made, the bloon chipper from btd5 (also a work in progress, upto 5-5-3 upgrades done).
         </td>
         <td width="10%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/BloonChipper/BloonChipper.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/BloonChipper/BloonChipper.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
-            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/BloonChipper/Mod%20File/BloonChipper.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mods/BloonChipper/BloonChipper.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
 
