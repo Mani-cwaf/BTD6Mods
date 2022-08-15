@@ -37,7 +37,7 @@
             <h2>Vanilla Paragons</h2>
         </td>
         <td>
-            A mod where I show my take on what the paragons should be for every vanilla tower, currently not complete whatsoever.
+            A mod where I show my take on what the paragons should be for every vanilla tower, currently not complete whatsoever but I'm working on it ok don't judge me.
         </td>
         <td width="10%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/VanillaParagons/VanillaParagons.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
@@ -53,13 +53,45 @@
             <h2>Fun Pack Of Fun Experiments</h2>
         </td>
         <td>
-            A collection of fun towers in a pack, with all of them toggleable (2/6 complete currently).
+            A collection of fun towers in a pack, with all of them toggleable (work in progress too, don't judge me I bit off more than I can chew).
         </td>
         <td width="10%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/FunPackOfFunExperiments.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
         </td>
         <td width="11%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/FunPackOfFunExperiments/Mod%20File/FunPackOfFunExperiments.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+        </td>
+    </tr>
+
+<table style="table-layout:fixed">
+    <tr>
+        <td width="30%" align="center">
+            <h2>Op Towers</h2>
+        </td>
+        <td>
+            Basically just memes, have you ever wanted a dart monkey that could do trillions of damage? Well I got the tower for you.
+        </td>
+        <td width="10%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/OPTowers/OPTowers.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+        </td>
+        <td width="11%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/OPTowers/Mod%20File/OPTowers.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
+        </td>
+    </tr>
+
+<table style="table-layout:fixed">
+    <tr>
+        <td width="30%" align="center">
+            <h2>Bloon Chipper</h2>
+        </td>
+        <td>
+            One of the hardest towers to code I've made, the bloon chipper from btd5 (also a work in progress, upto 5-5-3 upgrades done).
+        </td>
+        <td width="10%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/BloonChipper/BloonChipper.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
+        </td>
+        <td width="11%">
+            <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/BloonChipper/Mod%20File/BloonChipper.dll?raw=true"><img alt="Download" src="https://github.com/doombubbles/BTD6-Mods/blob/main/download_small.png?raw=true"></a>
         </td>
     </tr>
 
