@@ -1,4 +1,4 @@
-# BTD6Mods (my username on youtube is "Mani Dhingra" if you don't believe I created these)
+# BTD6Mods
 <table style="table-layout:fixed">
     <tr>
         <td width="30%" align="center">
