@@ -32,7 +32,7 @@ namespace BloonChipper
         public override int Cost => 750;
         public override int TopPathUpgrades => 5;
         public override int MiddlePathUpgrades => 5;
-        public override int BottomPathUpgrades => 3;
+        public override int BottomPathUpgrades => 0;
         public override string Description => "Rapidly sucks up and shreds bloons, spitting what's left out the back.";
         public override ParagonMode ParagonMode => ParagonMode.Base000;
         public override bool Use2DModel => true;

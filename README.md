@@ -5,7 +5,7 @@
             <h2>Dark Mage</h2>
         </td>
         <td>
-            My first tower mod, the dark mage is similar to the wizard monkey, but has more powerful and late-game worthy upgrades. thanks to mr ender for showcasing it on his channel.
+            My first tower mod, the dark mage is similar to the wizard monkey, but has more powerful and late-game worthy upgrades.
         </td>
         <td width="10%">
             <a href="https://github.com/Mani-cwaf/BTD6Mods/blob/main/Mod%20Code/DarkMage/DarkMage.md"><img alt="Info" src="https://github.com/doombubbles/BTD6-Mods/blob/main/info.png?raw=true"></a>
